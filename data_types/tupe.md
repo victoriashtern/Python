@@ -4,8 +4,8 @@
 
 | Method | Description |
 |---|---|
-| `count(x)` | Returns the number of times `x` appears in the tuple. |
-| `index(x[, start[, end]])` | Returns the index of the first occurrence of `x`. |
+| count(x) | Returns the number of times `x` appears in the tuple. |
+| index(x[, start[, end]]) | Returns the index of the first occurrence of `x`. |
 
 ---
 
@@ -26,21 +26,21 @@
 
 | Method | Description |
 |---|---|
-| `add(x)` | Adds an element to the set. |
-| `clear()` | Removes all elements from the set. |
-| `copy()` | Returns a shallow copy of the set. |
-| `difference(set2)` | Returns elements present only in the first set. |
-| `difference_update(set2)` | Removes common elements from the set. |
-| `discard(x)` | Removes an element if it exists. |
-| `intersection(set2)` | Returns common elements between sets. |
-| `intersection_update(set2)` | Keeps only common elements. |
-| `isdisjoint(set2)` | Returns `True` if sets have no common elements. |
-| `issubset(set2)` | Returns `True` if set is a subset of another. |
-| `issuperset(set2)` | Returns `True` if set is a superset of another. |
-| `pop()` | Removes and returns a random element. |
-| `remove(x)` | Removes an element; raises error if missing. |
-| `symmetric_difference(set2)` | Returns elements not common in both sets. |
-| `symmetric_difference_update(set2)` | Updates set with symmetric difference. |
-| `union(set2)` | Combines elements from both sets. |
+| add(x) | Adds an element to the set. |
+| clear() | Removes all elements from the set. |
+| copy() | Returns a shallow copy of the set. |
+| difference(set2) | Returns elements present only in the first set. |
+| difference_update(set2) | Removes common elements from the set. |
+| discard(x) | Removes an element if it exists. |
+| intersection(set2) | Returns common elements between sets. |
+| intersection_update(set2) | Keeps only common elements. |
+| isdisjoint(set2) | Returns `True` if sets have no common elements. |
+| issubset(set2) | Returns `True` if set is a subset of another. |
+| issuperset(set2) | Returns `True` if set is a superset of another. |
+| pop() | Removes and returns a random element. |
+| remove(x) | Removes an element; raises error if missing. |
+| symmetric_difference(set2) | Returns elements not common in both sets. |
+| symmetric_difference_update(set2) | Updates set with symmetric difference. |
+| union(set2) | Combines elements from both sets. |
 | `update(set2)` | Adds elements from another iterable or set. |
 
