@@ -12,3 +12,19 @@
 | sort(key=None, reverse=False) | Sorts the list in ascending order by default. |
 | reverse() | Reverses the elements of the list in place. |
 | copy() | Returns a shallow copy of the list. |
+
+---
+
+## Example
+
+```python
+numbers = [3, 1, 2]
+
+numbers.append(4)
+print(numbers)   # [3, 1, 2, 4]
+
+numbers.sort()
+print(numbers)   # [1, 2, 3, 4]
+
+numbers.pop()
+print(numbers)   # [1, 2, 3]
