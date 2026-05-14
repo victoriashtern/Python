@@ -1,30 +1,55 @@
+# Python List Methods and Operations
 
-| Method | Description |
-|---|---|
-| append(x) | Adds an item `x` to the end of the list. |
-| extend(iterable) | Adds all elements from another iterable to the list. |
-| insert(i, x) | Inserts item `x` at position `i`. |
-| remove(x) | Removes the first occurrence of item `x`. |
-| pop([i]) | Removes and returns the item at index `i` (last item if index not given). |
-| clear() | Removes all items from the list. |
-| index(x[, start[, end]]) | Returns the index of the first occurrence of `x`. |
-| count(x) | Returns the number of times `x` appears in the list. |
-| sort(key=None, reverse=False) | Sorts the list in ascending order by default. |
-| reverse() | Reverses the elements of the list in place. |
-| copy() | Returns a shallow copy of the list. |
+## List Methods
+
+| Method | Description | Example |
+|--------|-------------|---------|
+| append(x) | Add item to the end of the list | nums.append(5) |
+| extend(iterable) | Add multiple items to the list | nums.extend([6, 7]) |
+| insert(i, x) | Insert item at a specific position | nums.insert(1, 10) |
+| remove(x) | Remove first matching item | nums.remove(10) |
+| pop([i]) | Remove and return item at index | nums.pop() |
+| clear() | Remove all items from the list | nums.clear() |
+| index(x) | Return index of first matching item | nums.index(5) |
+| count(x) | Count occurrences of an item | nums.count(5) |
+| sort() | Sort the list in ascending order | nums.sort() |
+| reverse() | Reverse the list | nums.reverse() |
+| copy() | Return a shallow copy of the list | new_nums = nums.copy() |
 
 ---
 
-## Example
+## Common List Operations
+
+| Operation | Description | Example |
+|-----------|-------------|---------|
+| + | Concatenate lists | [1,2] + [3,4] |
+| * | Repeat list items | [1] * 3 |
+| in | Check membership | 2 in nums |
+| not in | Check non-membership | 5 not in nums |
+| len() | Get length of list | len(nums) |
+| min() | Get smallest item | min(nums) |
+| max() | Get largest item | max(nums) |
+| sum() | Sum all items | sum(nums) |
+| sorted() | Return sorted copy | sorted(nums) |
+| del | Delete item or slice | del nums[1] |
+| Slicing | Extract part of list | nums[1:4] |
+| Indexing | Access item by index | nums[0] |
+| Assignment | Modify list item | nums[0] = 99 |
+
+---
+
+## Example Usage
 
 ```python
-numbers = [3, 1, 2]
+nums = [3, 1, 4]
 
-numbers.append(4)
-print(numbers)   # [3, 1, 2, 4]
+nums.append(5)
+nums.insert(1, 10)
+nums.remove(1)
 
-numbers.sort()
-print(numbers)   # [1, 2, 3, 4]
+print(nums)        # [3, 10, 4, 5]
+print(nums[0])     # 3
+print(nums[1:3])   # [10, 4]
 
-numbers.pop()
-print(numbers)   # [1, 2, 3]
+nums.sort()
+print(nums)        # [3, 4, 5, 10]
