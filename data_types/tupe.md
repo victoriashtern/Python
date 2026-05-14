@@ -4,8 +4,8 @@
 
 | Method | Description |
 |---|---|
-| count(x) | Returns the number of times `x` appears in the tuple. |
-| index(x[, start[, end]]) | Returns the index of the first occurrence of `x`. |
+| count(x) | Returns the number of times x appears in the tuple. |
+| index(x[, start[, end]]) | Returns the index of the first occurrence of x. |
 
 ---
 
@@ -13,12 +13,12 @@
 
 | Operation | Example | Result |
 |---|---|---|
-| Length | `len(t)` | `5` |
-| Concatenation | `t1 + t2` | `(1, 2, 3, 4)` |
-| Repetition | `t * 2` | `(1, 2, 1, 2)` |
-| Membership | `3 in t` | `True` |
-| Slicing | `t[1:3]` | `(2, 3)` |
-| Iteration | `for x in t` | `1 2 3` |
+| Length | len(t) | 5 |
+| Concatenation | t1 + t2 | (1, 2, 3, 4) |
+| Repetition | t * 2 | (1, 2, 1, 2) |
+| Membership | 3 in t | True |
+| Slicing | t[1:3] | (2, 3) |
+| Iteration | for x in t | 1 2 3 |
 
 ---
 
@@ -34,9 +34,9 @@
 | discard(x) | Removes an element if it exists. |
 | intersection(set2) | Returns common elements between sets. |
 | intersection_update(set2) | Keeps only common elements. |
-| isdisjoint(set2) | Returns `True` if sets have no common elements. |
-| issubset(set2) | Returns `True` if set is a subset of another. |
-| issuperset(set2) | Returns `True` if set is a superset of another. |
+| isdisjoint(set2) | Returns True if sets have no common elements. |
+| issubset(set2) | Returns True if set is a subset of another. |
+| issuperset(set2) | Returns True if set is a superset of another. |
 | pop() | Removes and returns a random element. |
 | remove(x) | Removes an element; raises error if missing. |
 | symmetric_difference(set2) | Returns elements not common in both sets. |
