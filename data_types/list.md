@@ -1,55 +1,35 @@
 # Python List Methods and Operations
 
-## List Methods
-
-| Method | Description | Example |
-|--------|-------------|---------|
-| append(x) | Add item to the end of the list | nums.append(5) |
-| extend(iterable) | Add multiple items to the list | nums.extend([6, 7]) |
-| insert(i, x) | Insert item at a specific position | nums.insert(1, 10) |
-| remove(x) | Remove first matching item | nums.remove(10) |
-| pop([i]) | Remove and return item at index | nums.pop() |
-| clear() | Remove all items from the list | nums.clear() |
-| index(x) | Return index of first matching item | nums.index(5) |
-| count(x) | Count occurrences of an item | nums.count(5) |
-| sort() | Sort the list in ascending order | nums.sort() |
-| reverse() | Reverse the list | nums.reverse() |
-| copy() | Return a shallow copy of the list | new_nums = nums.copy() |
-
----
-
-## Common List Operations
-
-| Operation | Description | Example |
-|-----------|-------------|---------|
-| + | Concatenate lists | [1,2] + [3,4] |
-| * | Repeat list items | [1] * 3 |
-| in | Check membership | 2 in nums |
-| not in | Check non-membership | 5 not in nums |
-| len() | Get length of list | len(nums) |
-| min() | Get smallest item | min(nums) |
-| max() | Get largest item | max(nums) |
-| sum() | Sum all items | sum(nums) |
-| sorted() | Return sorted copy | sorted(nums) |
-| del | Delete item or slice | del nums[1] |
-| Slicing | Extract part of list | nums[1:4] |
-| Indexing | Access item by index | nums[0] |
-| Assignment | Modify list item | nums[0] = 99 |
-
----
-
-## Example Usage
-
-```python
-nums = [3, 1, 4]
-
-nums.append(5)
-nums.insert(1, 10)
-nums.remove(1)
-
-print(nums)        # [3, 10, 4, 5]
-print(nums[0])     # 3
-print(nums[1:3])   # [10, 4]
-
-nums.sort()
-print(nums)        # [3, 4, 5, 10]
+| Method / Operation | Description | Example | Result |
+|---|---|---|---|
+| append() | Add one item to the end | nums = [1, 2] nums.append(3) | [1, 2, 3] |
+| clear() | Remove all items | nums = [1, 2] nums.clear() | [] |
+| copy() | Create shallow copy | nums = [1, 2] new_nums = nums.copy() | [1, 2] |
+| count() | Count occurrences of value | nums = [1, 2, 2, 3] nums.count(2) | 2 |
+| del | Delete item or slice | nums = [1, 2, 3] del nums[1] | [1, 3] |
+| enumerate() | Get index and value together | list(enumerate(['a', 'b'])) | [(0, 'a'), (1, 'b')] |
+| extend() | Add multiple items | nums = [1, 2] nums.extend([3, 4]) | [1, 2, 3, 4] |
+| Indexing [] | Access item by index | nums = [10, 20, 30] nums[1] | 20 |
+| index() | Find position of value | nums = [10, 20, 30] nums.index(20) | 1 |
+| insert() | Insert item at specific index | nums = [1, 3] nums.insert(1, 2) | [1, 2, 3] |
+| len() | Get number of items | nums = [1, 2, 3] len(nums) | 3 |
+| List Comprehension | Create lists concisely | squares = [x*x for x in range(5)] | [0, 1, 4, 9, 16] |
+| List with Values | Create a list with items | nums = [1, 2, 3] | [1, 2, 3] |
+| list() | Create an empty list using constructor | nums = list() | [] |
+| max() | Largest value | max([3, 1, 2]) | 3 |
+| Membership in | Check if item exists | 2 in [1, 2, 3] | True |
+| Membership not in | Check if item does not exist | 5 not in [1, 2, 3] | True |
+| min() | Smallest value | min([3, 1, 2]) | 1 |
+| Negative Indexing | Access from end | nums = [10, 20, 30] nums[-1] | 30 |
+| Empty List Creation | Create an empty list | nums = [] | [] |
+| pop() | Remove item by index and return it | nums = [1, 2, 3] nums.pop() | returns 3, list becomes [1, 2] |
+| Repetition * | Repeat list items | [1, 2] * 2 | [1, 2, 1, 2] |
+| remove() | Remove first matching value | nums = [1, 2, 3] nums.remove(2) | [1, 3] |
+| reverse() | Reverse current order | nums = [1, 2, 3] nums.reverse() | [3, 2, 1] |
+| Slicing | Get part of list | nums = [1, 2, 3, 4] nums[1:3] | [2, 3] |
+| sort() | Sort list in ascending order | nums = [3, 1, 2] nums.sort() | [1, 2, 3] |
+| sort(reverse=True) | Sort in descending order | nums = [3, 1, 2] nums.sort(reverse=True) | [3, 2, 1] |
+| sorted() | Return new sorted list | sorted([3, 1, 2]) | [1, 2, 3] |
+| `sum()` | Sum of numeric items | `sum([1, 2, 3])` | `6` |
+| Concatenation `+` | Combine lists | `[1, 2] + [3, 4]` | `[1, 2, 3, 4]` |
+| `zip()` | Combine multiple lists | `list(zip([1,2], ['a','b']))` | `[(1, 'a'), (2, 'b')]` |
