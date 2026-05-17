@@ -10,11 +10,8 @@ A list is:
 - ✔️ **Dynamic** → size can grow or shrink  
 - ✔️ **Allows duplicates**  
 - ✔️ **Can store different data types**
-- ````markdown id="3q8kz1"
-# 🧱 Creating and Working with Python Lists
 
 ## 🆕 Creating Lists
-
 - **Empty list**
 ```python
 numbers = []
@@ -205,26 +202,26 @@ print(matrix[0][1])
 ## Useful List Functions
 These are built-in Python functions commonly used with lists:
 
-- `len()` – Returns the number of items in a list
-- `max()` – Returns the largest item in a list
-- `min()` – Returns the smallest item in a list
-- `sum()` – Returns the sum of all items in a list
-- `sorted()` – Returns a new sorted list from the elements of any iterable
+- len() – Returns the number of items in a list
+- max() – Returns the largest item in a list
+- min() – Returns the smallest item in a list
+- sum() – Returns the sum of all items in a list
+- sorted() – Returns a new sorted list from the elements of any iterable
 
 ## Common List Methods
 These are methods available for Python list objects:
 
-- `append()` – Adds an item to the end of the list
-- `insert()` – Inserts an item at a specified index
-- `extend()` – Adds all items from another iterable to the list
-- `remove()` – Removes the first matching item from the list
-- `pop()` – Removes and returns an item at a given index (last item by default)
-- `clear()` – Removes all items from the list
-- `sort()` – Sorts the list in place
-- `reverse()` – Reverses the order of the list in place
-- `copy()` – Returns a shallow copy of the list
-- `count()` – Returns the number of occurrences of a value
-- `index()` – Returns the index of the first occurrence of a value
+- append() – Adds an item to the end of the list
+- insert() – Inserts an item at a specified index
+- extend() – Adds all items from another iterable to the list
+- remove() – Removes the first matching item from the list
+- pop() – Removes and returns an item at a given index (last item by default)
+- clear() – Removes all items from the list
+- sort() – Sorts the list in place
+- reverse() – Reverses the order of the list in place
+- copy() – Returns a shallow copy of the list
+- count() – Returns the number of occurrences of a value
+- index() – Returns the index of the first occurrence of a value
 ```
 
 ```
@@ -280,7 +277,3 @@ Use lists when:
 - You need ordered data  
 - Duplicate values are allowed  
 - You need to frequently add or remove items
-  
-```
-
-
