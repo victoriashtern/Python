@@ -59,9 +59,6 @@ fruits = ["apple", "banana", "orange"]
 fruits[1] = "grape"
 ```
 
-````markdown id="lq9x2a"
-# ➕ Adding and Removing Items in Python Lists
-
 ## ➕ Adding Items
 
 ### append()
@@ -120,9 +117,6 @@ numbers.clear()
 ```python
 len(numbers)
 ```
-
-````markdown id="7v9m2k"
-# 🔁 Working with Python Lists
 
 ## 🔄 Looping Through Lists
 
