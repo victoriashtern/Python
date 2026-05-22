@@ -21,7 +21,7 @@
 | items() | Return key-value pairs | `student.items()` |
 | keys() | Return all keys | `student.keys()` |
 | len(dict) | Get number of items | `len(student)` |
-| pop(key) | Remove and return item | `student.pop("age")` |
+| pop(key) | Remove and return value that assosiated with key | `student.pop("age")` |
 | popitem() | Remove last inserted item | `student.popitem()` |
 | setdefault() | Get or insert default value | `student.setdefault("city", "Toronto")` |
 | update() | Update dictionary values | `student.update({"age": 26})` |
