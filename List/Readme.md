@@ -6,6 +6,9 @@ A list is:
 - ✔️ **Dynamic** → size can grow or shrink  
 - ✔️ **Allows duplicates**  
 - ✔️ **Can store different data types**
+- ✔️ **A list** in Python is a collection of items stored in a specific order.
+
+
 
 # Python List Methods and Operations
 
