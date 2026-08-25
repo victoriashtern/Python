@@ -1,5 +1,15 @@
+## 📌 What is a List?
+
+A list is:
+- ✔️ **Ordered** → items keep their position  
+- ✔️ **Mutable** → items can be changed  
+- ✔️ **Dynamic** → size can grow or shrink  
+- ✔️ **Allows duplicates**  
+- ✔️ **Can store different data types**
 
 # Python List Methods and Operations
+
+
 
 | Method / Operation | Description | Example | Result |
 |---|---|---|---|
