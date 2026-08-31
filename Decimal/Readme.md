@@ -96,5 +96,22 @@ b = Decimal("0.2")
 print(a + b)
 
 Output 0.3
+```
+
+## Limitations of `Decimal`
+
+| Limitation | Explanation | Example |
+|---|---|---|
+| 🐌 Slower | `Decimal` is generally slower than `float` | `Decimal("1.5") + Decimal("2.5") |
+| 💾 More memory | Uses more memory than `float` | Decimal("123.45") |
+| 🔢 Precision is not unlimited | Precision is controlled by the decimal context | getcontext().prec = 10 |
+| 🔄 Type mixing | You generally cannot directly mix `Decimal` and `float` in arithmetic | Decimal("1.5") + 2.5 → TypeError |
+| 🧮 Not ideal for scientific computing | Many scientific/NumPy operations are designed around `float` | numpy typically uses float64 |
+| 📐 Limited transcendental operations | Some advanced mathematical operations are less convenient than with `float` | sin(), cos(), etc. |
+| ⚙️ Context-dependent | Rounding and precision depend on the active `Decimal` context | getcontext().prec = 5 |
+| 📝 Requires care when creating values | Creating from a `float` can carry the float's approximation | Decimal(0.1) ⚠️ |
+| 🌐 Serialization can require extra handling | Some systems/APIs expect regular JSON numbers rather than Decimal objects | json.dumps(Decimal("10.50")) |
+
+
 
 ```
