@@ -1,3 +1,17 @@
+
+## f-string?
+
+An **f-string** (formatted string literal) is a Python feature that allows you to insert **variables and expressions directly inside a string** using `{}`.
+
+### Example
+
+```python
+name = "John"
+age = 25
+
+print(f"My name is {name} and I am {age} years old.")
+```
+
 ## Python f-String Formatting Options
 
 | Option | Description | Example | Output |
