@@ -1,5 +1,22 @@
+## Decimal Rules
+
+1. **`Decimal` is useful for money** because it provides precise decimal calculations.
+
+2. **When creating a `Decimal`, use a string** to avoid inheriting floating-point approximation.
+
+   ```python
+   Decimal("0.1")  # Recommended
+   
+ 
+### Simple Rule to Remember
+
+- `float` = fast and approximate
+- `Decimal` = slower but precise for decimal values
+ 
+
 
 ## Python `Decimal` Methods
+
 
 | Method / Usage | Description | Example |Output|
 |---|---|---|--|
