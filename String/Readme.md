@@ -61,6 +61,24 @@
 | upper() | Uppercase | "hi".upper() → "HI" |
 | zfill() | Pad with zeros | "42".zfill(5) → "00042" |
 
+# String Methods Reference
+
+A summary of the most commonly used string methods in programming (such as Python).
+
+| Method | Typical Use |
+| :--- | :--- |
+| `lower()` / `upper()` | Change capitalization |
+| `strip()` | Remove extra spaces |
+| `replace()` | Replace text |
+| `split()` | Convert a string into a list |
+| `join()` | Combine a list into a string |
+| `find()` | Search for text |
+| `startswith()` / `endswith()` | Check the beginning or end |
+| `count()` | Count occurrences |
+| `format()` | Insert values into strings |
+| `isdigit()` / `isalpha()` / `isalnum()` | Validate string contents |
+
+
 ---
 
 ## Notes
@@ -77,3 +95,6 @@ s = "hello"
 
 print(s[0])   # h
 print(s[-1])  # o
+
+
+
