@@ -32,6 +32,18 @@ A comprehensive reference table of the primary public methods available in Pytho
 | `tzname()` | All core | Returns the timezone name as a string, if available. | `dt.tzname()` | `str` or `None` |
 | `dst()` | All core | Returns the Daylight Saving Time offset, if available. | `dt.dst()` | `timedelta` or `None` |
 
+## FOrmating
+
+| Code | Description |
+| :--- | :--- |
+| `%d` | Day of month as a number |
+| `%m` | Month as a number |
+| `%y` | 2-digit year |
+| `%Y` | 4-digit year |
+| `%H` | Hour of day in 24-hour format |
+| `%M` | Minute as number |
+| `%S` | Second as number |
+
 ## Quick Example Usage
 
 ```python
