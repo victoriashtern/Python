@@ -32,7 +32,7 @@ A comprehensive reference table of the primary public methods available in Pytho
 | `tzname()` | All core | Returns the timezone name as a string, if available. | `dt.tzname()` | `str` or `None` |
 | `dst()` | All core | Returns the Daylight Saving Time offset, if available. | `dt.dst()` | `timedelta` or `None` |
 
-## FOrmating
+## Date time format Formating
 
 | Code | Description |
 | :--- | :--- |
@@ -43,6 +43,27 @@ A comprehensive reference table of the primary public methods available in Pytho
 | `%H` | Hour of day in 24-hour format |
 | `%M` | Minute as number |
 | `%S` | Second as number |
+
+## strptime code format
+
+| Code | Description | Example |
+| :--- | :--- | :--- |
+| `%a` | Abbreviated weekday name | Sat |
+| `%A` | Full weekday name | Saturday |
+| `%b` | Abbreviated month name | Oct |
+| `%B` | Full month name | October |
+| `%d` | Zero-padded day of month as a number | 01 |
+| `%m` | Zero-padded month as a number | 01 |
+| `%Y` | 4-digit year | 1977 |
+| `%y` | 2-digit year | 77 |
+| `%H` | Hour of day in 24-hour format | 13 |
+| `%I` | Hour of day in 12-hour format | 01 |
+| `%M` | Minute as number | 59 |
+| `%S` | Second as number | 59 |
+| `%p` | AM/PM specifier | AM |
+| `%f` | Microsecond | 0153219 |
+
+
 
 ## Quick Example Usage
 
